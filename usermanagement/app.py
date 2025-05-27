@@ -2,7 +2,7 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 
 class SimpleHandler(BaseHTTPRequestHandler):
     def do_GET(self):
-        message = f"Hello buddy from {self.server.service_name}!"
+        message = f"Hello baburao from {self.server.service_name}!"
         self.send_response(200)
         self.send_header('Content-type', 'text/plain')
         self.end_headers()
